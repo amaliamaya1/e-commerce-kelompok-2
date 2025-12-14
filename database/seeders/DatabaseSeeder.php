@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
 
     public function run(): void
     {
+
         $admin = User::firstOrCreate(
             ['email' => 'adminkore@gmail.com'],
             [
@@ -25,13 +26,34 @@ class DatabaseSeeder extends Seeder
         \App\Models\UserBalance::firstOrCreate(['user_id' => $admin->id], ['balance' => 0]);
 
         $member1 = User::firstOrCreate(
-            ['email' => 'member1@example.com'],
+            ['email' => 'sellermerch@kore.com'],
             [
-                'name' => 'Member One',
+                'name' => 'Seller One',
+                'password' => bcrypt('password'),
+                'role' => 'member',
+            ]
+            
+        );
+
+        $member2 = User::firstOrCreate(
+            ['email' => 'member2@kore.com'],
+            [
+                'name' => 'Member Two',
                 'password' => bcrypt('password'),
                 'role' => 'member',
             ]
         );
+
+        \App\Models\UserBalance::firstOrCreate(
+            ['user_id' => $member2->id],
+            ['balance' => 500000]
+        );
+
+        \App\Models\Buyer::firstOrCreate(
+            ['user_id' => $member2->id],
+            ['phone_number' => '08987654321']
+        );
+
         \App\Models\UserBalance::firstOrCreate(['user_id' => $member1->id], ['balance' => 1000000]);
         \App\Models\Buyer::firstOrCreate(['user_id' => $member1->id], ['phone_number' => '08123456789']);
 
