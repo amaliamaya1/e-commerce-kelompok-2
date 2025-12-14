@@ -164,7 +164,7 @@ Jika Anda menjalankan php artisan migrate:fresh --seed, berikut adalah akun defa
 | ---------- | -------------------- | ----------- |
 | *Admin*  | adminkore@gmail.com  | password    |
 | *Seller* | sellermerch@kore.com | password    |
-| *Member* | member2@kore.com  | password123 |
+| *Member* | member2@kore.com     | password    |
 
 
 <h3 align="center">
