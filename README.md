@@ -1,6 +1,75 @@
 <p align="center">
+  <img src="public/logopink.png" alt="KORÉ Logo" width="200"/>
+  <h1 align="center">KORÉ – K-Pop Merchandise E-Commerce</h1>
+  <p align="center"><i>Your K-Pop Essentials</i></p>
+</p>
+
+---
+
+## Tentang Project
+
+**KORÉ** adalah website **e-commerce merchandise K-Pop** yang dikembangkan menggunakan **Laravel 12**.  
+Website ini menyediakan berbagai produk kebutuhan dan koleksi penggemar K-Pop, seperti **album, apparel, lightstick, photocard**, serta merchandise pendukung lainnya.
+
+Project ini menerapkan konsep **multi-role user**, yaitu:
+- **Pembeli (Customer)**
+- **Penjual / Toko (Seller)**
+- **Admin**
+
+Seluruh fitur dirancang secara terintegrasi sehingga alur penggunaan website KORÉ berjalan dengan baik, mulai dari pengguna mengakses halaman utama hingga proses transaksi selesai.
+
+---
+
+## Tujuan Pengembangan
+
+Project ini dibuat untuk memenuhi tugas **Ujian Akhir Praktikum Pemrograman Web**, dengan fokus pada:
+- Implementasi CRUD berbasis Laravel
+- Pengelolaan transaksi e-commerce
+- Penerapan autentikasi dan otorisasi user
+- Struktur kode yang rapi dan mudah dikembangkan
+
+---
+
+## Fitur Utama
+
+### Customer Side
+- Homepage (daftar produk & kategori)
+- Detail produk (deskripsi, gambar, kategori, review)
+- Cart & Checkout
+- Riwayat transaksi
+- Wishlist
+- Wallet / saldo pengguna
+
+### Seller Dashboard
+- Registrasi dan pengelolaan toko
+- Manajemen produk (CRUD)
+- Manajemen kategori produk
+- Manajemen gambar produk
+- Manajemen pesanan & pengiriman
+- Saldo toko & histori saldo
+- Penarikan saldo (withdrawal)
+
+### Admin Panel
+- Verifikasi toko
+- Manajemen user
+- Manajemen toko
+
+---
+
+## Teknologi yang Digunakan
+
+- **Laravel 12**
+- **Laravel Breeze** 
+- **PHP 8.3+**
+- **MySQL**
+
+---
+
+## 🗂️ Struktur Project
+
+<p align="center">
   <a href="https://github.com/mamelilea/e-commerce-uap-pemweb.git">
-    <h1 align="center">E-Commerce UAP</h1>
+    <h1 align="center">E-Commerce Kore Kelompok 2</h1>
   </a>
 </p>
 
