@@ -68,7 +68,7 @@ Project ini dibuat untuk memenuhi tugas **Ujian Akhir Praktikum Pemrograman Web*
 ---
 
 ## Struktur Database
-![db structure](https://github.com/WisnuIbnu/E-Commerce-pemweb-uap/blob/main/public/db_structure.png?raw=true)
+![db structure](public/dbkore.png)
 
 
 ## Instalasi
@@ -132,19 +132,17 @@ http://localhost:8000
 ```
 
 ## Fitur yang Diimplementasikan
-- [ ] Halaman Homepage
-- [ ] Halaman Produk
-- [ ] Checkout
-- [ ] Riwayat Transaksi (opsional)
-- [ ] Registrasi Toko
-- [ ] Manajemen Pesanan
-- [ ] Saldo Toko
-- [ ] Penarikan Saldo
-- [ ] Manajemen Toko (produk, kategori, gambar)
-- [ ] Verifikasi Toko (Admin)
-- [ ] Manajemen User & Toko (Admin)
-
-*(Checklist dihapus atau ditandai sesuai progress kelompok kalian.)*
+- [✅] Halaman Homepage
+- [✅] Halaman Produk
+- [✅] Checkout
+- [✅] Riwayat Transaksi (opsional)
+- [✅] Registrasi Toko
+- [✅] Manajemen Pesanan
+- [✅] Saldo Toko
+- [✅] Penarikan Saldo
+- [✅] Manajemen Toko (produk, kategori, gambar)
+- [✅] Verifikasi Toko (Admin)
+- [✅] Manajemen User & Toko (Admin)
 
 ## Akun Default (Seeder)
 
