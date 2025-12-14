@@ -70,9 +70,14 @@ Project ini dibuat untuk memenuhi tugas **Ujian Akhir Praktikum Pemrograman Web*
 ## Struktur Database
 ![db structure](public/dbkore.png)
 
+Sebelum memulai, pastikan komputer Anda telah terinstal:
+- *PHP* (versi 8.3)
+- *Composer*
+- *Node.js* & *NPM*
+- *MySQL* (atau database lain yang didukung Laravel)
 
-## Instalasi
-
+ ## Instalasi
+  
 Ikuti langkah-langkah berikut untuk melakukan instalasi dan menjalankan proyek dalam lingkungan pengembangan di komputer lokal Anda:
 
 1. Clone repository versi terbaru dari sumber yang diberikan:
@@ -105,15 +110,22 @@ DB_DATABASE=e_commerce_uap
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-7. Jalankan migrasi database:
+7. Jalankan migrasi database & Seeder
 ```bash
 php artisan migrate
 ```
-Jika ingin menambahkan data dummy, gunakan:
+Migrasi + Data Dummy (Disarankan)*
+Untuk mengisi database dengan data awal (contoh produk, user admin, penjual, dll), jalankan perintah berikut. Ini akan menghapus semua data lama dan menggantinya dengan data baru (fresh):
 ```bash
 php artisan migrate --seed
+php artisan migrate:fresh --seed
 ```
-8. Jalankan development server Laravel:
+8. Setup Storage Link
+Buat symlink agar file di storage/app/public dapat diakses dari web:
+```bash
+php artisan storage:link
+```
+9. Jalankan development server Laravel:
 ```bash
 php artisan serve
 ```
@@ -155,4 +167,10 @@ Jika Anda menjalankan php artisan migrate:fresh --seed, berikut adalah akun defa
 | *Member* | member2@kore.com  | password123 |
 
 
-<h3 align="center">tetap semangat dan sukses selalu php lovers💕</h3>
+<h3 align="center">
+감사합니다 (Gamsahamnida) 🌸  
+Terima kasih atas ilmu dan bimbingannya  
+selama UAP Pemrograman Web.  
+Project KORÉ ini kami buat dengan semangat K-Pop.  
+Tetap semangat dan sukses selalu, PHP lovers 💕
+</h3>
